@@ -1,4 +1,4 @@
-export type { OptionNav } from '../types/index'
+import type { OptionNav } from '../types/index'
 
 export const optionNav: OptionNav[] = [
     {
