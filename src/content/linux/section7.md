@@ -1,10 +1,10 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
-author: "Tu Nombre"
+title: "Configuración de Red"
+author: "Pedro Martinez"
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
+description: "Domina la configuración de red en RHEL: NetworkManager, interfaces de red, DNS, direccionamiento IP y resolución de problemas de conectividad"
 category: "linux"
-tags: ["linux", "filesystem", "directories"]
+tags: ["RHEL", "Networking", "NetworkManager", "IP", "DNS", "nmcli", "Configuración", "Interfaces de Red"]
 level: "beginner"
 readingTime: 15
 status: true

@@ -1,10 +1,10 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
-author: "Tu Nombre"
+title: "Conexiones Remotas - SSH"
+author: "Pedro Martinez"
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
+description: "Aprende a configurar y gestionar conexiones SSH seguras en RHEL: autenticación por claves, configuración del servidor, permisos y solución de problemas"
 category: "linux"
-tags: ["linux", "filesystem", "directories"]
+tags: ["RHEL", "SSH", "Seguridad", "Conexiones Remotas", "Autenticación", "Claves SSH", "sshd", "Networking"]
 level: "beginner"
 readingTime: 15
 status: true

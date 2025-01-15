@@ -2,11 +2,11 @@ import type { OptionNav } from '../types/index'
 
 export const optionNav: OptionNav[] = [
     {
-        title: 'Home',
+        title: 'Inicio',
         href: '/'
     },
     {
-        title: 'About',
+        title: 'Sobre Nosotros',
         href: '/about'
     },
     {

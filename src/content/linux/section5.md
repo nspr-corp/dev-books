@@ -1,10 +1,9 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
+title: "Control de Acceso a Archivos"
 author: "Tu Nombre"
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
-category: "linux"
-tags: ["linux", "filesystem", "directories"]
+description: "Gestiona el control de acceso a archivos en RHEL: permisos básicos y avanzados, umask, ACLs y mejores prácticas de seguridad para proteger tus datos"category: "linux"
+tags: ["RHEL", "Permisos", "Seguridad", "chmod", "chown", "ACL", "umask", "Archivos"]
 level: "beginner"
 readingTime: 15
 status: true

@@ -1,10 +1,10 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
-author: "Tu Nombre"
+title: "Gestión de Paquetes"
+author: "Pedro Martinez"
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
+description: "Explora la gestión de paquetes en RHEL: DNF, RPM, repositorios, módulos y buenas prácticas para mantener tu sistema actualizado y seguro"
 category: "linux"
-tags: ["linux", "filesystem", "directories"]
+tags: ["RHEL", "DNF", "RPM", "Paquetes", "Repositorios", "Módulos", "Actualizaciones", "YUM"]
 level: "beginner"
 readingTime: 15
 status: true

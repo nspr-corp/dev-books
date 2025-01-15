@@ -1,10 +1,9 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
+title: "Gestión de Usuarios y Grupos"
 author: "Tu Nombre"
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
-category: "linux"
-tags: ["linux", "filesystem", "directories"]
+description: "Domina la administración de usuarios y grupos en RHEL: creación y gestión de cuentas, permisos, grupos y mejores prácticas de seguridad"category: "linux"
+tags: ["RHEL", "Usuarios", "Grupos", "Seguridad", "Administración", "root", "sudo"]
 level: "beginner"
 readingTime: 15
 status: true
@@ -18,12 +17,14 @@ order: 5
 ## ¿Qué es un Usuario en Linux?
 
 Imaginen Linux como un gran edificio de apartamentos. Cada persona que vive en él (usuario) tiene:
-- Su propia llave (contraseña)
-- Su propio espacio (directorio home)
-- Su identificación única (UID)
-- Reglas sobre qué puede y no puede hacer
+
+-   Su propia llave (contraseña)
+-   Su propio espacio (directorio home)
+-   Su identificación única (UID)
+-   Reglas sobre qué puede y no puede hacer
 
 Existen tres tipos principales de usuarios:
+
 1. **Superusuario (root)**: El administrador del edificio - tiene acceso a todo
 2. **Usuarios del Sistema**: Los trabajadores del edificio (procesos y servicios)
 3. **Usuarios Normales**: Los residentes regulares
@@ -52,10 +53,12 @@ nachosk1:x:1000:1000:Pedro Martinez:/home/nachosk1:/bin/bash
 Los grupos son como clubes en nuestro edificio. Cada usuario puede pertenecer a varios grupos, lo que determina qué recursos pueden compartir.
 
 ### Tipos de Grupos:
+
 1. **Grupo Principal**: El club al que perteneces automáticamente
 2. **Grupos Secundarios**: Clubes adicionales a los que te unes
 
 La información de los grupos se guarda en `/etc/group`:
+
 ```bash
 developers:x:1001:alex,maria,juan
 ```
@@ -63,6 +66,7 @@ developers:x:1001:alex,maria,juan
 ## Comandos Esenciales para la Gestión
 
 ### Gestión de Usuarios
+
 ```bash
 # Crear un nuevo usuario
 useradd -m -s /bin/bash newuser
@@ -76,6 +80,7 @@ userdel -r olduser             # -r elimina también su directorio home
 ```
 
 ### Gestión de Grupos
+
 ```bash
 # Crear un grupo
 groupadd developers
@@ -88,6 +93,7 @@ groupdel oldgroup
 ```
 
 ### Gestión de Contraseñas
+
 ```bash
 # Cambiar contraseña
 passwd username
@@ -99,29 +105,31 @@ chage -M 90 username  # La contraseña expira en 90 días
 ## Tips de Seguridad que He Aprendido
 
 1. **Nunca uses root directamente**
-   - Utiliza `sudo` para tareas administrativas
-   - Configura `sudoers` adecuadamente
+
+    - Utiliza `sudo` para tareas administrativas
+    - Configura `sudoers` adecuadamente
 
 2. **Política de Contraseñas Fuerte**
-   ```bash
-   # Configurar expiración de contraseña
-   chage -M 90 -W 7 -I 14 username
-   ```
+
+    ```bash
+    # Configurar expiración de contraseña
+    chage -M 90 -W 7 -I 14 username
+    ```
 
 3. **Monitoreo Regular**
-   ```bash
-   # Ver intentos de inicio de sesión
-   lastb
-   # Ver usuarios conectados
-   who
-   ```
+    ```bash
+    # Ver intentos de inicio de sesión
+    lastb
+    # Ver usuarios conectados
+    who
+    ```
 
 ## La Shell Nologin
 
 Para cuentas de servicio o usuarios que no necesitan acceso interactivo:
+
 ```bash
 usermod -s /sbin/nologin serviceuser
 ```
-
 
 PD: Recuerden siempre hacer respaldos antes de modificar usuarios del sistema, ¡y nunca bloqueen su propia cuenta de administrador! 😅

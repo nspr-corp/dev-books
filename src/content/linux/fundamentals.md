@@ -1,11 +1,11 @@
 ---
-title: 'Sistema Operativo Linux (Parte 1)'
-author: 'Nombre'
+title: 'Red Hat Enterprise Linux: Fundamentos'
+author: 'Pedro Martinez'
 publishDate: 2024-01-15
-description: 'Aprende los fundamentos del sistema operativo Linux y su sistema de archivos'
-image: 'Logo-Linux.jpg'
-category: 'Linux'
-tags: ['Linux', 'Command']
+description: 'Descubre los fundamentos de Red Hat Enterprise Linux (RHEL), una distribución empresarial robusta y confiable'
+image: '/Linux/Red-Hat-Enterprise-Linux.png'
+category: 'RHEL'
+tags: ['RHEL', 'Linux', 'Enterprise', 'Fundamentos']
 isIntro: true
 order: 1
 ---

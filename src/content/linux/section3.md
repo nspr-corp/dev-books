@@ -1,10 +1,10 @@
 ---
-title: "El Sistema de Archivos Linux: Un Árbol Invertido"
-author: "Tu Nombre"
+title: "Editor de texto Vim"
+author: 'Pedro Martinez'
 publishDate: 2024-01-15
-description: "Aprende cómo Linux organiza todos sus archivos y directorios"
-category: "linux"
-tags: ["linux", "filesystem", "directories"]
+description: "Aprende a usar Vim, el editor de texto más poderoso en RHEL: modos, comandos esenciales, configuración y mejores prácticas"
+category: "RHEL"
+tags: ["RHEL", "Vim", "Editor de Texto", "Terminal", "Línea de Comandos", "Productividad"]
 level: "beginner"
 readingTime: 15
 status: true

@@ -3,7 +3,7 @@ title: 'Sistema Operativo Linux - parte 2'
 author: 'Nombre'
 publishDate: 2024-01-15
 description: 'Aprende los fundamentos del sistema operativo Linux y su sistema de archivos'
-image: 'Logo-Linux.jpg'
+image: '/Linux/Red-Hat-Enterprise-Linux.png'
 category: 'Linux'
 tags: ['Linux', 'Command']
 isIntro: true
