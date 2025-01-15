@@ -1,7 +1,9 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import Footer from '@/components/utils/Footer.astro';
+import Navigation from '@/components/utils/Navigation.astro';
+import { ViewTransitions } from 'astro:transitions';
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -9,22 +11,23 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Home" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<ViewTransitions fallback="none" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Home" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <ViewTransitions fallback="none" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <Navigation />
+        <slot />
+        <Footer />
+    </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #444546;
-	}
+    html {
+        font-family: system-ui, sans-serif;
+    }
 </style>

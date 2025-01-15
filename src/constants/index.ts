@@ -18,3 +18,6 @@ export const optionNav: OptionNav[] = [
         href: '/start'
     }
 ]
+
+export const CATEGORIES = ['kubernetes', 'linux', 'programming'];
+export const DIFFICULTY_LEVELS = ['beginner', 'intermediate', 'advanced'];

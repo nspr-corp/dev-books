@@ -1,16 +1,13 @@
 ---
-import Footer from '@/components/utils/Footer.astro';
-import Navigation from '../components/utils/Navigation.astro';
 import Layout from '../layouts/Layout.astro';
-import Hero from '@/components/home/Hero.jsx'
+import Hero from '@/components/home/Hero.jsx';
+import ListContent from '@/components/home/ListContent.astro';
+import Main from '@/components/utils/Main.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<Navigation />
-		<Hero client:idle/>	
-		<Footer />
-	</main>
+    <Main>
+        <Hero client:idle />
+        <ListContent />
+    </Main>
 </Layout>
-
-
