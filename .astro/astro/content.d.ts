@@ -141,6 +141,41 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"linux": {
+"conexiones-remotas.md": {
+	id: "conexiones-remotas.md";
+  slug: "conexiones-remotas";
+  body: string;
+  collection: "linux";
+  data: InferEntrySchema<"linux">
+} & { render(): Render[".md"] };
+"configuracion-de-red.md": {
+	id: "configuracion-de-red.md";
+  slug: "configuracion-de-red";
+  body: string;
+  collection: "linux";
+  data: InferEntrySchema<"linux">
+} & { render(): Render[".md"] };
+"control-de-acceso-a-archivos.md": {
+	id: "control-de-acceso-a-archivos.md";
+  slug: "control-de-acceso-a-archivos";
+  body: string;
+  collection: "linux";
+  data: InferEntrySchema<"linux">
+} & { render(): Render[".md"] };
+"direccion-y-tuberias.md": {
+	id: "direccion-y-tuberias.md";
+  slug: "direccion-y-tuberias";
+  body: string;
+  collection: "linux";
+  data: InferEntrySchema<"linux">
+} & { render(): Render[".md"] };
+"editor-vim.md": {
+	id: "editor-vim.md";
+  slug: "editor-vim";
+  body: string;
+  collection: "linux";
+  data: InferEntrySchema<"linux">
+} & { render(): Render[".md"] };
 "fundamentals.md": {
 	id: "fundamentals.md";
   slug: "fundamentals";
@@ -148,72 +183,37 @@ declare module 'astro:content' {
   collection: "linux";
   data: InferEntrySchema<"linux">
 } & { render(): Render[".md"] };
-"section1.md": {
-	id: "section1.md";
-  slug: "section1";
+"gestion-de-paquetes.md": {
+	id: "gestion-de-paquetes.md";
+  slug: "gestion-de-paquetes";
   body: string;
   collection: "linux";
   data: InferEntrySchema<"linux">
 } & { render(): Render[".md"] };
-"section10.md": {
-	id: "section10.md";
-  slug: "section10";
+"gestion-de-usuarios-y-grupos.md": {
+	id: "gestion-de-usuarios-y-grupos.md";
+  slug: "gestion-de-usuarios-y-grupos";
   body: string;
   collection: "linux";
   data: InferEntrySchema<"linux">
 } & { render(): Render[".md"] };
-"section2.md": {
-	id: "section2.md";
-  slug: "section2";
+"monitoreo-soportes.md": {
+	id: "monitoreo-soportes.md";
+  slug: "monitoreo-soportes";
   body: string;
   collection: "linux";
   data: InferEntrySchema<"linux">
 } & { render(): Render[".md"] };
-"section3.md": {
-	id: "section3.md";
-  slug: "section3";
+"seguridad-y-permisos.md": {
+	id: "seguridad-y-permisos.md";
+  slug: "seguridad-y-permisos";
   body: string;
   collection: "linux";
   data: InferEntrySchema<"linux">
 } & { render(): Render[".md"] };
-"section4.md": {
-	id: "section4.md";
-  slug: "section4";
-  body: string;
-  collection: "linux";
-  data: InferEntrySchema<"linux">
-} & { render(): Render[".md"] };
-"section5.md": {
-	id: "section5.md";
-  slug: "section5";
-  body: string;
-  collection: "linux";
-  data: InferEntrySchema<"linux">
-} & { render(): Render[".md"] };
-"section6.md": {
-	id: "section6.md";
-  slug: "section6";
-  body: string;
-  collection: "linux";
-  data: InferEntrySchema<"linux">
-} & { render(): Render[".md"] };
-"section7.md": {
-	id: "section7.md";
-  slug: "section7";
-  body: string;
-  collection: "linux";
-  data: InferEntrySchema<"linux">
-} & { render(): Render[".md"] };
-"section8.md": {
-	id: "section8.md";
-  slug: "section8";
-  body: string;
-  collection: "linux";
-  data: InferEntrySchema<"linux">
-} & { render(): Render[".md"] };
-"section9.md": {
-	id: "section9.md";
-  slug: "section9";
+"sistema-de-archivo.md": {
+	id: "sistema-de-archivo.md";
+  slug: "sistema-de-archivo";
   body: string;
   collection: "linux";
   data: InferEntrySchema<"linux">

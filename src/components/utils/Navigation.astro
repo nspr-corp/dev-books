@@ -1,11 +1,12 @@
 ---
 import { optionNav } from '@/constants';
 import IconLogo from './IconLogo.astro';
-import Switch from './Switch.astro';
+import Switch from './Switch.svelte';
 ---
 
-
-<header class="bg-white dark:bg-gray-900 fixed w-full z-10">
+<header
+    class="bg-blue-600 dark:bg-gray-900 fixed w-full z-10 top-0 left-0 right-0"
+>
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
@@ -22,7 +23,7 @@ import Switch from './Switch.astro';
                             optionNav.map(item => (
                                 <li>
                                     <a
-                                        class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                        class="text-gray-200 transition hover:text-gray-50 dark:text-white dark:hover:text-white/75 mt-[-1rem] text-sm"
                                         href={item.href}
                                     >
                                         {item.title}
@@ -36,7 +37,7 @@ import Switch from './Switch.astro';
 
             <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
-                    <Switch />
+                    <Switch client:idle />
                 </div>
             </div>
         </div>
