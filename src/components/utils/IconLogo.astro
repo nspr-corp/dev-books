@@ -6,7 +6,7 @@ interface Props {
     size: string;
 }
 
-const { size = 'size-14 md:size-[4rem]' } = Astro.props;
+const { size } = Astro.props;
 ---
 
 <Image src={logo} alt="Logo" class={`${size}`} />
