@@ -21,10 +21,6 @@ status: true
 order: 11
 ---
 
-Aquí tienes el texto en tercera persona manteniendo el enfoque original:
-
----
-
 # Consola Web y el Soporte en Red Hat Linux
 
 Este artículo presenta una visión detallada sobre una de las herramientas más eficaces para administrar servidores Red Hat: la consola web y las herramientas de soporte. Se explorará cómo estas soluciones facilitan la gestión y el monitoreo de sistemas para mantener su rendimiento óptimo.

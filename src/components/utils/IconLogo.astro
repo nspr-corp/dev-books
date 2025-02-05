@@ -1,5 +1,12 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 import logo from '../../../public/logo.png';
+
+interface Props {
+    size: string;
+}
+
+const { size = 'size-14 md:size-[4rem]' } = Astro.props;
 ---
-<Image src={logo} alt="Logo" class="size-14 md:size-[4rem]" />
+
+<Image src={logo} alt="Logo" class={`${size}`} />

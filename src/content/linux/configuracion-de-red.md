@@ -21,7 +21,7 @@ status: true
 order: 8
 ---
 
-# Viaje por Linux: Dominando la Configuración de Red - NetworkManager al Rescate
+# Configuración de Red - NetworkManager al Rescate
 
 En esta guía, se exploran los aspectos fundamentales de la configuración y gestión de conexiones de red en Linux, demostrando que es un proceso más accesible de lo que parece.
 

@@ -7,56 +7,60 @@ const linux2Intros = await getCollection('linux-2', ({ data }) => data.isIntro);
 const mainContent = [...linuxIntros, ...linux2Intros];
 ---
 
-<section class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <div class="mx-auto max-w-screen-xl px-4">
-        <h2 class="md:text-4xl sm:text-3xl text-xl font-bold mb-8 text-center">
-            Lista de Contenido
-        </h2>
+<div class="mx-auto max-w-screen-xl px-4">
+    <h2
+        class="md:text-4xl sm:text-3xl text-xl font-bold mb-8 text-center text-dark-primary dark:text-secondary"
+    >
+        Lista de Contenido
+    </h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {
-                mainContent.map(c => {
-                    const { slug, data } = c;
-                    const { title, description, image } = data;
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+            mainContent.map(c => {
+                const { slug, data } = c;
+                const { title, description, image } = data;
 
-                    return (
-                        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                            <div class="w-full h-48 md:h-56 overflow-hidden">
-                                <img
-                                    src={image}
-                                    alt={title}
-                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                />
-                            </div>
+                return (
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out border border-six dark:border-dark-six">
+                        <div class="w-full h-48 md:h-56 overflow-hidden">
+                            <img
+                                src={image}
+                                alt={title}
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
 
-                            <div class="p-6">
-                                <div class="flex items-center gap-4 mb-4">
-                                    <div class="p-2 bg-blue-500 rounded-lg" />
-                                    <h3 class="text-xl font-semibold">
-                                        {title}
-                                    </h3>
-                                </div>
-
-                                <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                    {description}
-                                </p>
-
-                                <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">
-                                        4 lecciones • 2 horas
-                                    </span>
-                                    <a
-                                        href={`/linux/${slug}`}
-                                        class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-                                    >
-                                        Comenzar
+                        <div class="p-6 flex justify-between flex-col h-[276px]">
+                            <div class="mb-4 group">
+                                <div class="flex gap-4">
+                                    <div class="p-2 bg-primary/80 group-hover:bg-primary dark:bg-dark-secondary dark: rounded-lg transition" />
+                                    <a href={`/linux/${slug}`} class="py-2">
+                                        <h3 class="text-xl font-bold text-fourth dark:text-dark-secondary group-hover:scale-105 transition">
+                                            {title}
+                                        </h3>
                                     </a>
                                 </div>
                             </div>
+
+                            <p class="text-gray-600 dark:text-dark-five mb-4 text-lg line-clamp-3">
+                                {description}
+                            </p>
+
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-five dark:text-dark-five">
+                                    10 lecciones
+                                </span>
+                                <a
+                                    href={`/linux/${slug}`}
+                                    class="px-4 py-2 bg-primary/90 text-secondary rounded-lg hover:bg-primary transition-colors"
+                                >
+                                    Comenzar
+                                </a>
+                            </div>
                         </div>
-                    );
-                })
-            }
-        </div>
+                    </div>
+                );
+            })
+        }
     </div>
-</section>
+</div>

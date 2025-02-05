@@ -11,7 +11,7 @@ export default function MenuToggle({ children }) {
         <>
             <button
                 onClick={toggleMenu}
-                className="lg:hidden fixed right-0 top-20 bg-gray-800 p-2 rounded-l-lg z-50 hover:bg-gray-700"
+                className="md:hidden fixed right-0 top-20 bg-fourth dark:bg-dark-secondary dark:text-dark-primary p-2 rounded-l-lg z-50 hover:bg-gray-700"
             >
                 <span className="sr-only">Menú</span>
                 <svg
@@ -31,7 +31,7 @@ export default function MenuToggle({ children }) {
             </button>
 
             <div
-                className={`fixed inset-y-0 left-0 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 transition duration-200 ease-in-out w-64 bg-gray-900 lg:bg-transparent z-40`}
+                className={`fixed inset-y-0 left-0 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 md:transition-none md:duration-0 transition duration-200 ease-in-out w-64 bg-fourth dark:bg-dark-primary lg:bg-transparent z-40`}
             >
                 <div className="sticky top-20 overflow-y-auto p-4 lg:p-0">
                     {children}
@@ -40,7 +40,7 @@ export default function MenuToggle({ children }) {
 
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+                    className="fixed inset-0 bg-fourth bg-opacity-50 z-30 lg:hidden"
                     onClick={() => setIsOpen(false)}
                 />
             )}

@@ -10,7 +10,7 @@ status: true
 order: 6
 ---
 
-# *Control de Acceso a Archivos - La Seguridad es lo Primero*
+# Control de Acceso a Archivos - La Seguridad es lo Primero
 
 El sistema de permisos en Linux es como el sistema de seguridad de un edificio, donde diferentes personas tienen diferentes niveles de acceso. Esta guía te ayudará a entender y gestionar estos permisos de manera efectiva.
 

@@ -10,13 +10,9 @@ export const optionNav: OptionNav[] = [
         href: '/about'
     },
     {
-        title: 'Table of Contents',
+        title: 'Tabla de Contenidos',
         href: '/start'
     },
-    {
-        title: 'Start',
-        href: '/start'
-    }
 ]
 
 export const CATEGORIES = ['kubernetes', 'linux', 'programming'];

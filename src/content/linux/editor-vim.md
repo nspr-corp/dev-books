@@ -19,7 +19,7 @@ status: true
 order: 4
 ---
 
-# Vim: El Editor Avanzado de Texto en Linux
+# Vim: El Editor Avanzado de Texto
 
 Vim representa una herramienta fundamental en el ecosistema Linux, destacando por su eficiencia y versatilidad en la edición de texto. Este documento explora sus características y funcionalidades principales.
 

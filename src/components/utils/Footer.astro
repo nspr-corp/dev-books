@@ -3,17 +3,19 @@ import { optionNav } from '@/constants';
 import IconLogo from './IconLogo.astro';
 ---
 
-<footer class="bg-blue-600 dark:bg-gray-900">
+<footer class="bg-primary dark:bg-dark-primary">
     <div
-        class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+        class="relative mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 lg:pt-6"
     >
-        <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8 bg-white rounded-full flex justify-center items-center">
+        <div
+            class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8 bg-secondary rounded-full flex justify-center items-center"
+        >
             <a class="inline-block" href="#top">
                 <span class="sr-only">Back to top</span>
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="size-10 text-blue-600 dark:text-gray-900"
+                    class="size-10 text-primary dark:text-gray-900"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                 >
@@ -30,15 +32,15 @@ import IconLogo from './IconLogo.astro';
                 <div class="md:flex md:items-center md:gap-12">
                     <a class="block" href="/">
                         <span class="sr-only">Home</span>
-                        <IconLogo />
+                        <IconLogo size="size-20 md:size-24" />
                     </a>
                 </div>
 
                 <p
-                    class="mx-auto mt-6 max-w-md text-center leading-relaxed text-white lg:text-left dark:text-gray-400"
+                    class="mx-auto mt-6 max-w-md md:text-center leading-relaxed text-secondary dark:text-dark-secondary lg:text-left dark:text-dark-pri"
                 >
-                    Master Kubernetes and cloud-native to build and scale
-                    applications with agility
+                    Eres libre de leer este contenido en cualquier momento,
+                    somos una comunidad de aprendizaje y crecimiento.
                 </p>
             </div>
 
@@ -49,7 +51,7 @@ import IconLogo from './IconLogo.astro';
                     optionNav.map(item => (
                         <li>
                             <a
-                                class="text-white transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                class="text-secondary transition dark:hover:text-dark-five dark:text-dark-secondary"
                                 href={item.href}
                             >
                                 {item.title}
@@ -61,9 +63,9 @@ import IconLogo from './IconLogo.astro';
         </div>
 
         <p
-            class="mt-12 text-center text-sm text-white lg:text-right dark:text-gray-400"
+            class="mt-12 text-center text-sm text-secondary lg:text-right dark:text-dark-five"
         >
-            Copyright &copy; 2022. All rights reserved.
+            Copyright &copy; 2025. All rights reserved.
         </p>
     </div>
 </footer>
